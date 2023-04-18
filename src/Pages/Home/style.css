@@ -1,0 +1,196 @@
+.home_container {
+  background-color: var(--primary-color);
+  justify-content: center;
+  height: 100%;
+}
+
+.home_wrapper {
+  max-width: 1100px !important;
+  margin: 0 auto;
+  padding-top: 10px;
+  /* background-color: red; */
+}
+.home_wrapper > .hero_container {
+  /* background-color: blue; */
+  max-width: 700px;
+  margin: 5.5rem auto;
+}
+.home_wrapper > .hero_container > h1 {
+  font-size: 4rem;
+  margin: 10px 0;
+  color: var(--text1);
+}
+.home_wrapper > .hero_container > p {
+  font-size: 1.5rem;
+  color: var(--text2);
+  margin: 0 10px;
+}
+.home_wrapper > .hero_container > form {
+  /* background-color: red; */
+  /* margin: 5px 10px; */
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--secondary-color);
+  margin: 2rem 1.1rem;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  padding: 0 30px;
+
+  @media (max-width: 600px) {
+    .right {
+      display: none;
+    }
+  }
+}
+.home_wrapper > .hero_container > form .left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.home_wrapper > .hero_container > form > .left > p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text1);
+}
+.home_wrapper > .hero_container > form > .left > input {
+  flex: 1;
+  background-color: transparent;
+  font-size: 20px;
+  border: none;
+  color: var(--text2);
+}
+.home_wrapper > .hero_container > form > .left > input:focus {
+  outline: none;
+}
+.home_wrapper > .hero_container > form > .right > .btn {
+  background-color: var(--secondary-color);
+
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.home_wrapper > .hero_container > .btn {
+  background-color: var(--secondary-color);
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 0 1.1rem;
+  display: none;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
+.home_wrapper > .hero_container > .info {
+  margin-top: 25px;
+  font-size: 18px;
+  margin-bottom: 120px;
+}
+
+/* ///////////////////   Categories ////////////////// */
+
+.home_wrapper > .categories {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text2);
+  width: 100%;
+  overflow-x: scroll;
+}
+.home_wrapper > .categories > li {
+  cursor: pointer;
+  padding: 15px;
+}
+
+.home_wrapper > .categories > li.active {
+  border: 1px solid var(--secondary-color);
+  padding: 7px 15px;
+  border-radius: 50px;
+  color: var(--secondary-color);
+}
+
+/* //////////////////////////// Posts /////////////////// */
+
+.home_wrapper > .posts_container {
+  display: flex;
+  padding: 2rem 0;
+  overflow-x: scroll;
+}
+.home_wrapper > .posts_container > .post_container {
+  background-color: var(--primary-color);
+  box-shadow: var(--secondary-color) 0px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 220px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  margin: 0 2rem;
+  border-radius: 5px;
+  padding-bottom: 8px;
+}
+.home_wrapper > .posts_container > .post_container:hover {
+  transform: scale(1.02);
+}
+
+.home_wrapper > .posts_container > .post_container > .img > img {
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.home_wrapper > .posts_container > .post_container > .description {
+  /* display: flex; */
+  margin: 15px 0;
+  padding: 0 10px;
+
+  justify-content: flex-start;
+  text-align: start;
+}
+.home_wrapper > .posts_container > .post_container > .description > .name {
+  font-weight: 600;
+  color: var(--text1);
+}
+.home_wrapper > .posts_container > .post_container > .description > .text {
+  color: var(--text2);
+  margin-left: 5px;
+}
+
+.home_wrapper > .posts_container > .post_container > .stats {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.home_wrapper > .posts_container > .post_container > .stats > .icon {
+  color: var(--text1);
+}
+.home_wrapper > .posts_container > .post_container > .stats > .text {
+  margin-left: 10px;
+  color: var(--text2);
+}
+
+/* //////////////////////////// Posts /////////////////// */
+
+/* /////////////////////////Main ///////////// */
+
+.home_wrapper > .home_main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+/* /////usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html/////////////////////Main ///////////// */
+.home_wrapper > .home_main > h1 {
+  font-size: 3rem;
+  max-width: 600px;
+  color: var(--text1);
+  margin: 0 auto;
+}
+.home_wrapper > .home_main > p {
+  color: var(--text2);
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}

@@ -1,0 +1,54 @@
+.login_container{
+    margin: 12rem auto;
+    border: 1px solid var(--secondary-color);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    border-radius: 20px;
+    
+}
+.login_container > h1{
+    color: var(--text1);
+}
+.login_container  > form > input{
+    border: 1px solid var(--secondary-color);
+    border-radius: 50px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--text1);
+    font-size: 16px;
+    padding: 10px 25px;
+    margin: 10px 0;
+    width: 80%;
+}
+.login_container  > form > input:focus{
+    outline: none;
+}
+
+.login_container > form > .btn {
+    background-color: var(--secondary-color);
+    width: 85%;
+    border-radius: 50px;
+    margin: 30px auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    
+}
+.login_container > p {
+    color: var(--text1);
+}
+.login_container > p > span{
+    color: var(--secondary-color) !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login_container > p > span > a{
+    
+    color: var(--secondary-color) !important;
+}

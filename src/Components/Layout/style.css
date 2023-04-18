@@ -1,0 +1,10 @@
+.layout_container {
+    background-color: var(--primary-color);
+
+}
+
+.layout_wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px;
+}

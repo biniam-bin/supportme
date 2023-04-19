@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Nav from "../../Components/Nav";
 import "./style.css";
 import { AiOutlineHeart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [activeCategory, setActiveCategory] = useState<String | null>("all");
@@ -15,10 +16,19 @@ function Home() {
           setActiveCategory={setActiveCategory}
         />
         <div className="posts_container">
+          <Link to={"/binam"}>
           <Post />
+          </Link>
+          <Link to={"/binam"}>
           <Post />
+          </Link>
+          <Link to={"/binam"}>
           <Post />
+          </Link>
+          <Link to={"/binam"}>
           <Post />
+          </Link>
+          
         </div>
         <div className="home_main">
           <h1>Give your audience an easy way to say thanks.</h1>

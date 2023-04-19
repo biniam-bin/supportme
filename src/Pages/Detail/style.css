@@ -1,0 +1,190 @@
+.detail_container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.detail_container > .images{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detail_container > .images > .banner_bg{
+    height: 300px;
+    border-radius: 10px;
+    max-width: 1100px;
+    width: 100%;
+    object-fit: cover;
+}
+.detail_container > .images > .profile_img{
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 140px;
+}
+.detail_container > .images > .profile_img > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+
+.detail_container > .info{
+    margin-top: 80px;
+}
+.detail_container > .info > h1{
+    color: var(--text1);
+    margin: 0;
+}
+.detail_container > .info > p.desc{
+    margin: 8px 0;
+    font-size: 20px;
+    color: var(--text1);
+}
+.detail_container > .info > p.stats{
+    
+    font-size: 20px;
+    color: var(--text2);
+    margin-bottom: 50px;
+}
+
+.detail_container > .line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+
+.block_container{
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.details_body{
+    display: flex;
+    justify-content: space-between;
+    
+    @media (max-width: 750px){
+        flex-direction: column-reverse;
+    }
+}
+.details_body > .left{
+    flex: 0.6;
+    text-align: start;
+    @media (max-width: 750px){
+        max-width: 500px;
+    }
+}
+.details_body > .left > div > h2{
+    color: var(--text1);
+    
+}
+
+
+.details_body > .left > div > p{
+    color: var(--text2);
+}
+
+
+.details_body > .right{
+    flex: 0.4;
+    color: var(--text1);
+    @media (max-width: 750px){
+        max-width: 500px;   
+    }
+    
+}
+.details_body > .right > div > div > .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.details_body > .right > div > div > .container > .coffee{
+    font-size: 2.7rem;
+    margin: 0;
+
+}
+.details_body > .right > div > div > .container > .circles_container{
+    display: flex;
+    align-items: center;
+}
+.details_body > .right > div > div > .container > .circles_container > .circle{
+    height: 35px;
+    width: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+
+}
+.details_body > .right > div > div > .container > .circles_container > .active_circle{
+        height: 35px;
+    width: 35px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color:  var(--secondary-color);
+}
+
+.details_body > .right > div > div > .container > input {
+    max-width: 35px;
+    height: 30px;
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--text1);
+    font-size: 16px;
+    text-align: center;
+}
+.details_body > .right > div > div > .container > input:focus {
+    outline: none;
+}
+
+.right > div > div > input{
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    color: var(--text1);
+}
+.right > div > div > input:focus{
+    outline: none;
+}
+.right > div > div > textarea{
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    color: var(--text1);
+    /* width: 100%; */
+    resize: none;
+}
+.right > div > div > textarea:focus{
+    outline: none;  
+}
+
+.right > div > .btn {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
